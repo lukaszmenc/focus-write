@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusWrite</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="content">
+        <textarea id="textArea" placeholder="Start writing..."></textarea>
+        <div class="info">
+            Words: <span id="wordCount">0</span><br>
+            Characters: <span id="charCountNoSpaces">0</span><br>
+            Characters (with spaces): <span id="charCountWithSpaces">0</span>
+        </div>
+        <div class="buttons">
+            <button onclick="saveToFile()">Save to File</button>
+            <button onclick="loadFromFile()">Load File</button>
+            <button onclick="clearText()">Clear Text</button>
+            <button onclick="toggleFullScreen()">Toggle Fullscreen</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
